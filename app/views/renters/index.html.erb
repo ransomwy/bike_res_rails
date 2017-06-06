@@ -1,0 +1,7 @@
+<h1>Renters Index</h1>
+<p><%= link_to 'New Renter', new_renter_path %></p>
+
+<%= @renters.each do |renter| %>
+  <h2><%= renter.name %></h2>
+  <p><%= link_to 'Show Renter', renter_path(renter)%></p>
+<% end %>

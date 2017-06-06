@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bike_model: MyString
+  bike_size: MyString
+  pedal_type: MyString
+  number_of_days: 1
+
+two:
+  bike_model: MyString
+  bike_size: MyString
+  pedal_type: MyString
+  number_of_days: 1
