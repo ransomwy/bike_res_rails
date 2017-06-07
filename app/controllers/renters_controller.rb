@@ -11,11 +11,25 @@ class RentersController < ApplicationController
     @renter = Renter.new
   end
 
+  def update
+    @renter = Renter.find(params[:id])
+    if @renter.update(renter_params)
+      redirect_to renters_path
+    else
+      render :edit
+    end
+  end
+
+
   def edit
     @renter = Renter.find(params[:id])
   end
 
   def destroy
+    @renter = Renter.find(params[:id])
+    @renter.destroy
+    redirect_to renters_path
+
   end
 
   def create

@@ -1,2 +1,13 @@
-<h1>Renters#edit</h1>
-<p>Find me in app/views/renters/edit.html.erb</p>
+<h1>Edit Renter</h1>
+<%= form_for @renter do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address%>
+
+  <%= f.label :phone %>
+  <%= f.text_field :phone %>
+
+  <%= f.submit %>
+  <% end %>
